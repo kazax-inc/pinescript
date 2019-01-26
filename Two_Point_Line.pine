@@ -1,0 +1,11 @@
+//@version=3
+study(title='|KZX| 2pointLine', shorttitle='|KZX| 2pointLine', overlay=true)
+
+//  ||  Point Coordinate
+pointCond = <condition> ? <valueOfLine> : na
+
+//  ||  Show Line
+showCond = <condition> ? <color> : na
+
+//  ||  Plot Line
+plot(title= 'Line', series= pointCond, color= showCond)
